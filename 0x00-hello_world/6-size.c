@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
- *main - prints out the size of different types
+ *main - Prints out the size of different types
+ *
+ *Description: The function prints out the size of the given variables
  *Return: 0(Success)
  */
 int main(void)
@@ -18,4 +20,3 @@ int main(void)
 	printf("Size of a float: %ld byte(s)\n", sizeof(e));
 	return (0);
 }
- 
