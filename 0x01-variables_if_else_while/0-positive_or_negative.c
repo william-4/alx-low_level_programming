@@ -1,30 +1,28 @@
+#include <time.h>
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
  *main - prints whether a number is positive or negative
- *@n: random number generated externally
+ *@n: random number
  *
  *Return: 0(Success)
  */
 
 int main(void)
 {
-	/*random input*/
 	int n;
+	int p;
 
-	scanf("%d", &n);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	p = n % 10;
 
 	if (n > 0)
-	{
 		printf("%d is positive\n", n);
-	}
 	else if (n < 0)
-	{
 		printf("%d is negative\n", n);
-	}
 	else
-	{
 		printf("%d is zero\n", n);
-	}
 	return (0);
 }
