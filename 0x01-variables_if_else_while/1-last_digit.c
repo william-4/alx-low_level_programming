@@ -7,9 +7,6 @@
  */
 int main(void)
 {
-	int n;
-	int p;
-
 	scanf("%d", &n);
       	p = n % 10;
 	if (p>5)
