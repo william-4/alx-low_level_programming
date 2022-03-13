@@ -9,9 +9,10 @@
 
 int main()
 {
-	/*local variable declaration*/
-	int n:
+	int num;
 
+	scanf("%d", &n)
+		
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
@@ -24,4 +25,5 @@ int main()
 	{
 		printf("%d is zero\n", n);
 	}
+	return 0;
 }
