@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+/**
+ *main - Start of execution
+ *
+ *Return: 0(Success)
+*/
+int main(void)
+{
+	/*
+	 *for numbers 0-9
+	 *
+	 */
+}	
