@@ -9,6 +9,7 @@
 
 int main(void)
 {
+	/*random input*/
 	int n;
 
 	scanf("%d", &n);
