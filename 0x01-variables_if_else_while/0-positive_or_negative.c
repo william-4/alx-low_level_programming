@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
- *pos_neg - prints whether a number is positive or negative
+ *main - prints whether a number is positive or negative
  *@n: random number generated externally
  *
- *Return:
+ *Return: 0(Success)
  */
 
-int main()
+int main(void)
 {
 	int n;
 
@@ -25,5 +25,5 @@ int main()
 	{
 		printf("%d is zero\n", n);
 	}
-	return 0;
+	return (0);
 }
