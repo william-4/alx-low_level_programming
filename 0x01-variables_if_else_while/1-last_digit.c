@@ -3,8 +3,6 @@
 #include <stdio.h>
 /**
  *main - prints the last digit stored in variable n
- *@n: input number
- *@p: remainder
  *
  *Return: 0(Success)
  */

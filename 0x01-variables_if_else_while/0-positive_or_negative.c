@@ -4,7 +4,6 @@
 
 /**
  *main - prints whether a number is positive or negative
- *@n: random number
  *
  *Return: 0(Success)
  */
