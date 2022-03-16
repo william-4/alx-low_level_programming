@@ -1,15 +1,18 @@
 #include <unistd.h>
 
 /**
- *main - Start of program execution
+ *_putchar - Prints putchar
  *
  *Return: 0(Success)
  */
+int _putchar(int c)
+{
+	return (write(1, &c, 1));
+}
+
 int main(void)
 {
-	const char msg[] = "_putchar\n";
-
-	write(STDOUT_FILENO, msg, sizeof(msg) - 1);
+       	_putchar('a');
 
 	return (0);
 }
