@@ -35,6 +35,6 @@ void times_table(void)
 			else
 				_putchar(prod);
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 }
