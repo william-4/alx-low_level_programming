@@ -16,21 +16,21 @@ void times_table(void)
 			prod = a * b;
 			if (prod < 10 && b != 9)
 			{
-				_putchar(" ");
+				_putchar(' ');
 				_putchar(prod);
-				_putchar(",");
-				_putchar(" ");
+				_putchar(',');
+				_putchar(' ');
 			}
 			else if (prod >= 10 && b != 9)
 			{
 				_putchar(prod);
-				_putchar(",");
-				_putchar(" ");
+				_putchar(',');
+				_putchar(' ');
 			}
 			else if (prod < 10 && b == 9)
 			{
-				_putchar(" ");
-				_putchar("prod");
+				_putchar(' ');
+				_putchar(prod);
 			}
 			else
 				_putchar(prod);
