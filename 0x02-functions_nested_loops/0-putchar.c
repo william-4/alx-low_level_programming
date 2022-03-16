@@ -5,17 +5,10 @@
  *
  *Return: 0(Success)
  */
-int _putchar()
+int main(void)
 {
 	const char msg[] = "_putchar\n";
 	write(STDOUT_FILENO, msg, sizeof(msg) - 1);
-
-	return (0);
-}
-
-int main(void)
-{
-	_putchar();
 
 	return (0);
 }
