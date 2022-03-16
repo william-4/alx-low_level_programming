@@ -13,7 +13,9 @@ int _putchar()
 	return (0);
 }
 
-int main()
+int main(void)
 {
 	_putchar();
+
+	return (0);
 }
