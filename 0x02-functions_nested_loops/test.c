@@ -9,12 +9,14 @@ void main(void)
 		for (b = 0; b <= 9; b++)
 		{
 			prod = a * b;
-			if (prod < 9)
+			if (prod < 10 && b != 9)
 				printf(" %d, ", prod);
-			if ()
+			else if (prod >= 10 && b != 9)
 				printf("%d, ", prod);
-			if (a < 9)
-				printf("%d");
+			else if (prod < 10 && b == 9)
+				printf(" %d", prod);
+			else
+				printf("%d", prod);
 		}
 		printf("\n");
 	}
