@@ -1,6 +1,7 @@
 #include <stdio.h>
+
 /**
- *main - start of execution 
+ *main - start of execution
  *
  *Return: 0 always.
  */

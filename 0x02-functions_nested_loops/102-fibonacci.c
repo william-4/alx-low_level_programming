@@ -5,8 +5,7 @@
  *
  *Return: 0(Success)
  */
-
-void main(void)
+int main(void)
 {
 	int a = 0;
 	int b = 1;
@@ -23,4 +22,5 @@ void main(void)
 		else
 			printf("%d, ", c);
 	}
+	return (0);
 }
