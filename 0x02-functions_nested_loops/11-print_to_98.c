@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -16,14 +17,11 @@ void print_to_98(int n)
 		{
 			if (i == 98)
 			{
-				_putchar(i);
-				_putchar('\n');
+				printf("%d\n", i);
 			}
 			else
 			{
-				_putchar(i);
-				_putchar(',');
-				_putchar('\n');
+				printf("%d, ", i);
 			}
 		}
 	}
@@ -33,14 +31,11 @@ void print_to_98(int n)
 		{
 			if (i == 98)
 			{
-				_putchar(i);
-				_putchar('\n');
+				printf("%d\n", i);
 			}
 			else
 			{
-				_putchar(i);
-				_putchar(',');
-				_putchar('\n');
+				printf("%d, ", i);
 			}
 		}
 	}
