@@ -6,7 +6,6 @@
  *
  *Return: 1 if c is upper and 0 otherwise
  */
-
 int _isupper(int c)
 {
 	int alpha;
@@ -15,7 +14,6 @@ int _isupper(int c)
 	{
 		if (c == alpha)
 			return (1);
-		else
-			return (0);
 	}
+	return (0);
 }
