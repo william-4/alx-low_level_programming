@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+/**
+ *print_line - draws a straight line in the terminal
+ *@n: number of times to print _
+ *Return: void
+ */
+void main(int n)
+{
+	int i;
+	n = 0;
+
+	if (n > 0)
+	{
+		for (i = 0; i <= n; i++)
+		{
+			putchar('_');
+		}
+		putchar('\n');
+	}
+	else
+		putchar('\n');
+}

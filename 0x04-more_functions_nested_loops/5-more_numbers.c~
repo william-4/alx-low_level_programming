@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+/**
+ *more_numbers - prints 10 times the numbers from 0-14
+ *Return: void
+ */
+void main(void)
+{
+	int i, b;
+
+	i = 0;
+	while (i < 10)
+	{
+		b = 0;
+		while (b < 15)
+		{
+			if (b > 9)
+				putchar('0' + b / 10);
+			putchar('0' + b % 10);
+			b++;
+		}
+		putchar('\n');
+		i++;
+	}
+}
