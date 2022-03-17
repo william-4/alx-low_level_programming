@@ -2,9 +2,10 @@
 
 /**
  * _isdigit - checks for a digit
- *@c: input ditig
+ *@c: input digit
+ *
  *Return: 1 if a digit, 0 if otherwise
-*/
+ */
 int _isdigit(int c)
 {
 	int i;
