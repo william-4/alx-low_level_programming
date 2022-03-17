@@ -5,7 +5,8 @@
  *@c: input ditig
  *Return: 1 if a digit, 0 if otherwise
 */
-int _isdigit(int c);
+
+int _isdigit(int c)
 {
 	int i;
 

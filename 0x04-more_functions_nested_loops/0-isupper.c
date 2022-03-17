@@ -3,9 +3,11 @@
 /**
  *_isupper - checks for uppercase character
  *@c: input character
+ *
  *Return: 1 if c is upper and 0 otherwise
  */
-int _isupper(int c);
+
+int _isupper(int c)
 {
 	int alpha;
 
