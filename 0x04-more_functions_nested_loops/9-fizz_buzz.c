@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *fizz_buzz - fizz_buzz test
+ *main - fizz_buzz test
  *Return: void
  */
 void main()
@@ -10,16 +10,26 @@ void main()
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		if (i % 3 == 0 &&  i % 5 == 0)
+		{
 			printf("%s", "FizzBuzz");
-		else if (i % 5 == 0)
-			printf("%s", "Buzz");
+		}
 		else if (i % 3 == 0)
+		{
 			printf("%s", "Fizz");
+		}
+		else if (i % 5 == 0)
+		{
+			printf("%s", "Buzz");
+		}
 		else
+		{
 			printf("%d", i);
+		}
 		if (i != 100)
-			putchar(' ');
+		{
+			printf(" ");
+		}
 	}
-	putchar('\n');
+	printf("\n");
 }
