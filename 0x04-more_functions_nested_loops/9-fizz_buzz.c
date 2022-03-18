@@ -2,9 +2,10 @@
 
 /**
  *main - fizz_buzz test
+ *
  *Return: void
  */
-void main()
+void main(void)
 {
 	int i;
 
