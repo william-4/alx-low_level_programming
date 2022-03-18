@@ -4,7 +4,7 @@
 - My code uses Betty style
 - Use of the standard library is not allowed
 
-## The various tasks include:
+# The various tasks include:
 -Task 0 a function that checks for uppercase character
 -Task 1 a function that checks for a digit (0 - 9) *
 -Task 2 a function that multiplies two integers
