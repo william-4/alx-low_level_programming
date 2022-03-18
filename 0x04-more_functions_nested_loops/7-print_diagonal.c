@@ -2,7 +2,8 @@
 
 /**
  *print_diagonal - draws a diagonal line on the terminal
- *@n: the number of times the character \ should be printed
+ *@n: the number of times the backslash character should be printed
+ *
  *Return: void
  */
 void print_diagonal(int n)
@@ -13,9 +14,9 @@ void print_diagonal(int n)
 		_putchar('\n');
 	else
 	{
-		for (i = 1; i <= n; i++)
+		for (i = 0; i < n; i++)
 		{
-			for (j = 1; j <= i; j++)
+			for (j = 0; j < i; j++)
 			{
 				_putchar(' ');
 			}
