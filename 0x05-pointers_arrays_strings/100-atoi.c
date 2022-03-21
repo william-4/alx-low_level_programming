@@ -10,7 +10,7 @@
 int _atoi(char *s)
 {
 	int int1, int2;
-	unbed int a;
+	unsigned int a;
 	int b = 1;
 	char c;
 
