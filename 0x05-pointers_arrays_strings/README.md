@@ -1,6 +1,6 @@
 # Day 1 of learning about pointers and strings in C
 - Using the holberton betty style to write my code
-- Using '_putchar', a custome 'putchar' function
+- Using '_putchar', a custome [putchar] function
 - Currently not allowed to use the standard library
 
 ## The project tasks include:
