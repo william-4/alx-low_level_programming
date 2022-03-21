@@ -1,4 +1,4 @@
-# Day 1 of learning about pointers and strings in C
+# Day 1 of learning about pointers, arrays and strings in C
 - Using the holberton betty style to write my code
 - Using '_putchar', a custom 'putchar' function
 - Currently not allowed to use the standard library
