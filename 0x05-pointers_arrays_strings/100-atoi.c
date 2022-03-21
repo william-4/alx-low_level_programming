@@ -29,7 +29,7 @@ int _atoi(char *s)
 			while (*(s + int2) > 47 && *(s + int2) < 58)
 			{
 				a = (a * 10) + *(s + int2) - '0';
-				int2 ++;
+				int2++;
 			}
 			break;
 		}
