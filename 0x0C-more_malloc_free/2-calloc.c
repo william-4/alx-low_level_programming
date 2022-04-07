@@ -23,8 +23,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (ptr == NULL)
 		return (NULL);
 	/* initialize the values at each index to zero */
-	for (i = 0; i < nmemb; i++)
-		*(int *)(ptr + i) = 0;
+	for (i = 0; i < (nmemb * size); i++)
+		*(char *)(ptr + i) = 0;
 	return (ptr);
 }
 
