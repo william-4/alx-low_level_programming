@@ -3,9 +3,10 @@
 /**
  * main - prints the name of the file it was compiled from
  *
- * Return: void
+ * Return: 0(Success)
  */
-void main(void)
+int main(void)
 {
-	printf("0%s\n", __FILE__);
+	printf("%s\n", __FILE__);
+	return (0);
 }
