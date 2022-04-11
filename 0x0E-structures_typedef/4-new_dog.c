@@ -1,8 +1,5 @@
 #include <stdlib.h>
-<<<<<<< HEAD
 #include <stdio.h>
-=======
->>>>>>> 9ca255a2e85373783cc0664c7b2e11c3f7541d9c
 #include "dog.h"
 
 /**
@@ -53,12 +50,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 		doggy->owner[i] = owner[i];
 	doggy->age = age;
 	return (doggy);
-}
-int main(void)
-{
-    dog_t *my_dog;
-
-    my_dog = new_dog("Poppy", 3.5, "Bob");
-    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
-    return (0);
 }
