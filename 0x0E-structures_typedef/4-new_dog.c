@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include <stdio.h>
+#include "dog.h"
 
 /**
  * new_dog - creates a new dog (new variable of type dog_t)
@@ -10,13 +12,50 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new;
+	int i, namelen, ownerlen;
 
-	new = malloc(sizeof(dog_t));
-	if (new == NULL)
+	struct dog *doggy = NULL;
+
+	namelen = 0;
+	while (name[namelen] != '\0')
+		namelen++;
+	ownerlen = 0;
+	while (owner[ownerlen] != '\0')
+		ownerlen++;
+
+	doggy = malloc(sizeof(struct dog));
+	if (doggy == NULL)
+	{
+		free(doggy);
 		return (NULL);
-	new->name = name;
-	new->age = age;
-	new->owner = owner;
-	return (new);
+	}
+	doggy->name = malloc(namelen + 1);
+	if (doggy->name == NULL)
+	{
+		free(doggy->name);
+		free(doggy);
+		return (NULL);
+	}
+	doggy->owner = malloc(ownerlen + 1);
+	if (doggy->owner == NULL)
+	{
+		free(doggy->name);
+		free(doggy->owner);
+		free(doggy);
+		return (NULL);
+	}
+	for (i = 0; i <= namelen; i++)
+		doggy->name[i] = name[i];
+	for (i = 0; i <= ownerlen; i++)
+		doggy->owner[i] = owner[i];
+	doggy->age = age;
+	return (doggy);
+}
+int main(void)
+{
+    dog_t *my_dog;
+
+    my_dog = new_dog("Poppy", 3.5, "Bob");
+    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
+    return (0);
 }
