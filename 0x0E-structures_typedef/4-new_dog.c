@@ -1,5 +1,8 @@
 #include <stdlib.h>
+<<<<<<< HEAD
 #include <stdio.h>
+=======
+>>>>>>> 9ca255a2e85373783cc0664c7b2e11c3f7541d9c
 #include "dog.h"
 
 /**
