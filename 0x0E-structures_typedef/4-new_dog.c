@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "dog.h"
 
 /**
  * new_dog - creates a new dog (new variable of type dog_t)
