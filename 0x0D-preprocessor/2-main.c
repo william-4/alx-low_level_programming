@@ -6,8 +6,7 @@
  *
  * Return: void
  */
-void main()
+void main(void)
 {
 	printf("%s\n", __FILE__);
-	return;
 }
