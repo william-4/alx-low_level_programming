@@ -1,4 +1,4 @@
-#0x0D-preprocessor
+# 0x0D-preprocessor
 
 ## 0-object_like_macro.h
 > a header file that defines a macro ```SIZE``` of value ```1024```
