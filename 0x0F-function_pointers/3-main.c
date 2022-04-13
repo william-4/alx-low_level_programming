@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "3-main.h"
 
 /**
   *main - start of execution
