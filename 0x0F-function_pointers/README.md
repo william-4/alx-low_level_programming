@@ -9,8 +9,8 @@
 ## 2-int_index.c
 > a function that searches for an integer
 
-## 3
+## 3*
 > a function that performs simple operations
 
-## 4
+## 4*
 > a function that prints the opcodes of its own main function
