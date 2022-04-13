@@ -9,15 +9,15 @@
 ## 2-int_index.c
 > a function that searches for an integer
 
-## 3 *
+## 3 - a program containing 4 files *
 > a program that performs simple operations
-### 3-calc.h
+#### 3-calc.h
 > contains prototypes and data structures used by the program
-### 3-op_functions.c
+#### 3-op_functions.c
  > contains 5 function ```+, -, *, /, %```
-### 3-get_op_func.c
-> file containing a functin that selects the correct function to perform the required operation
-### 3-main.c
+#### 3-get_op_func.c
+> file containing a function that selects the correct function to perform the required operation
+#### 3-main.c
 > a file containing the main function body
 
 ## 100-main_opcodes.c *
