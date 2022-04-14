@@ -21,7 +21,7 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 		 * goes to the next argument in value of type int
 		 */
 		printf("%d", va_arg(ap, int));
-		if (i == 3)
+		if (i == (n-1))
 		{
 			printf("\n");
 			return;
