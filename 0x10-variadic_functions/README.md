@@ -13,5 +13,4 @@
 > a function that prints anything
 
 #### Reading
-[Reference Material](https://www.gnu.org/software/libc/manual/
-html_node/Argument-Macros.html)
+[Reference Material](https://www.gnu.org/software/libc/manual/html_node/Argument-Macros.html)
