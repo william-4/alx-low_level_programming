@@ -1,8 +1,21 @@
 # Structures and typedef
 
-0. Task 0 - defining a new type 'struct dog'
-1. Task 1 - writing a function that initialize a variable of type struct dog
-2. Task 2 - writng a function that prints a struct dog
-3. Task 3 - defining a new type 'dog_t' as a new name for the type 'struct dog'
-4. Task 4 - a function that creates a new dog
-5. Task 5 - a function that frees dogs
+### 1-init_dog.c
+> a function that initializes a variable of type ```struct dog```
+
+### 2-print_dog.c *
+> a function that prints a ```struct dog```
+
+### dog.h
+> header file that defines a new type ```struct dog```
+> define a new type ```dog_t``` as a new name for the type ```struct dog```
+
+### 4-new_dog.c
+> a function that creates a new dog
+
+### 5-free_dog.c
+> a function that frees dogs
+
+#### Reading
+[Structures in C](http://www.catb.org/esr/structure-packing/)
+[The Lost Art of Structure Packing](https://en.wikipedia.org/wiki/Struct_(C_programming_language))
