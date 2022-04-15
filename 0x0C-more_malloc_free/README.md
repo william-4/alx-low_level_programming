@@ -1,8 +1,19 @@
-# More malloc and free
+# Calloc, Realloc and more Malloc and Free
 
-0. A function that allocates memory using malloc
-1. A function that concatenates two strings
-2. A function that allocates memory for an array, using malloc
-3. A function that creates an array of integers
-4. A function that reallocates a memory block using malloc and free
-5. A program that multiplies two positive integers
+### 0-malloc_checked.c
+> a program that allocates memory using malloc
+
+### 1-string_nconcat.c
+> a program that concatenates two strings
+
+### 2-calloc.c
+> a program that allocates memory for an array using malloc
+
+### 3-array_range.c
+> a program that creates an array on integers
+
+### 100-realloc.c *
+> a program that reallocaes a memory block using malloc and free
+
+### 101-mul.c **
+> a program that multiplies two positive integers
