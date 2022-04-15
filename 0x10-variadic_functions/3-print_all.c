@@ -2,21 +2,6 @@
 #include <stdio.h>
 
 /**
- * strlength - finds the length of a string
- * @s: input string/ character array
- *
- * Return: int(length of the string)
- */
-int strlength(const char * const s)
-{
-	unsigned int i = 0;
-
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
-
-/**
  * print_all - prints anything
  * @format: list of types of arguments passed to the function
  *
@@ -33,7 +18,7 @@ void print_all(const char * const format, ...)
 	va_start(ap, format);/* last named parameter is a string */
 
 	a = 0;
-	while (a < strlength(format)) /* format && format[i] */
+	while (format && format[a]) /* a < strlen(format) */
 	{
 		switch (format[a])
 		{
