@@ -6,7 +6,7 @@
  *
  * Return: length of the input string
  */
-int stringlen(char *str)
+int stringlen(const char *str)
 {
 	int i;
 
@@ -33,7 +33,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 
 	new->str = strdup(str);
-	new->len = _strlen(str);
+	new->len = stringlen(str);
 	new->next = NULL;
 
 	if (*head == NULL)
