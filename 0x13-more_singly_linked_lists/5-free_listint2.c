@@ -10,9 +10,11 @@ void free_listint2(listint_t **head)
 {
 	listint_t *temp;
 
+	/* check if pointer to pointer is NULL */
 	if (head == NULL)
 		return;
 
+	/* check if pointer is NULL */
 	while (*head != NULL)
 	{
 		temp = (*head)->next;
