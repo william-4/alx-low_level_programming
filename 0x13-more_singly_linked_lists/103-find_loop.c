@@ -8,24 +8,24 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *one, *two, *temp;
+	listint_t *one, *temp;
 
 	/* introduce two pointers to transverse the list till they meet */
-	one = two = head;
-	while (two != NULL && two->next != NULL)
+	one = temp = head;
+	while (temp != NULL && temp->next != NULL)
 	{
 		one = one->next;
-		two = two->next->next;
-		if (one == two)
+		temp = temp->next->next;
+		if (one == temp)
 			break;
 	}
-	if (one == two)
+	if (one == temp)
 	{
 		temp = head;
-		while (slow != temp)
+		while (one != temp)
 		{
 			temp = temp->next;
-			slowPtr = slowPtr.next;
+			one = one.next;
 		}
 		return (temp);
 	}
