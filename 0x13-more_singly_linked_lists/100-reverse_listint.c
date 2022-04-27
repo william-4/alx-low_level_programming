@@ -18,6 +18,7 @@ listint_t *reverse_listint(listint_t **head)
 		temp2->next = temp;
 		temp = temp2;
 	}
-	*head = temp;
+	*head = temp2;
+
 	return (*head);
 }
