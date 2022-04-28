@@ -10,7 +10,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	int i = 0;
 	int power = 1;
-	int sum = 0;
+	unsigned int sum = 0;
 
 	if (*b == '\0')
 		return (0);
