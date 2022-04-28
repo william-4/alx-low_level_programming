@@ -14,6 +14,8 @@ unsigned int binary_to_uint(const char *b)
 
 	if (*b == '\0')
 		return (0);
+	if (!b)
+		return (0);
 
 /* find length of array */
 	while (b[i] != '\0')
