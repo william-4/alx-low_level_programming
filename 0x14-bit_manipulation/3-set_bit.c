@@ -15,7 +15,23 @@ int set_bit(unsigned long int *n, unsigned int index)
 	if (index < 0 || index > 32 || !a)
 		return (-1);
 	temp = 1 << index;
-	(a & ~temp) | ((1 << index) & temp);
+	a = a | temp;
+	*n = a;
 
 	return (1);
+}
+int main(void)
+{
+    unsigned long int n;
+
+    n = 1024;
+    set_bit(&n, 5);
+    printf("%lu\n", n);
+    n = 0;
+    set_bit(&n, 10);
+    printf("%lu\n", n);
+    n = 98;
+    set_bit(&n, 0);
+    printf("%lu\n", n);
+    return (0);
 }
