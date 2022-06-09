@@ -1,27 +1,6 @@
 #include "lists.h"
 
 /**
-  * len - gets number of nodes in a doubly lineked list
-  * @h: pointer to first node in the  list.
-  *
-  * Return: number of elements in list.
-  */
-unsigned int len(dlistint_t *h)
-{
-	dlistint_t *temp;
-	unsigned int count;
-
-	temp = h;
-	count = 0;
-	while (temp != NULL)
-	{
-		temp = temp->next;
-		count++;
-	}
-	return (count);
-}
-
-/**
  * delete_dnodeint_at_index - deletes a node at index idx
  * @head: the first node in the list
  * @index: the index of the node to be deleted
@@ -30,39 +9,31 @@ unsigned int len(dlistint_t *h)
  */
 int delete_dnoeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *temp, *temp2, *tp;
-	unsigned int len = len(*head);
+	dlistint_t *current;
+	unsigned int i;
 
-	if (*head == NULL || len < index)
+	if (head == NULL || *head == NULL)
 		return (-1);
-	temp = *head;
-	if (index == 0 && (*head)->next == NULL)
+	current = *head;
+	if (index == 0)
 	{
-		free(temp), *head = NULL;
+		*head = current->next;
+		if (current->next != NULL)
+		{
+			current->next->prev = NULL;
+		}
+		free(current);
 		return (1);
 	}
-	if (index ==  0 && (*head)->next != NULL)
+	for (i = 0; i < index; i++)
 	{
-		*head = (*head)->next;
-		(*head)->prev = NULL;
+		if (current->next == NULL)
+			return (-1);
+		current = current->next;
 	}
-	if (index > 0)
-	{
-		while (index != 0)
-			temp = temp->next, index--;
-		if (temp->next == NULL)
-		{
-			tp = *head;
-			while (tp->next != NULL)
-				tp = tp->next;
-			temp2 = tp->prev;
-			temp2->next = NULL, free(tp);
-			return (1);
-		}
-		temp2 = temp->prev;
-		temp2->next = temp->next;
-		temp->next->prev = temp2;
-	}
-	free(temp);
+	current->prev->next = current->next;
+	if (current->next != NULL)
+		current->next->prev = current->prev;
+	free(current);
 	return (1);
 }
