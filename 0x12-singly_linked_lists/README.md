@@ -1,3 +1,3 @@
 # Singly Linked lists
 
-### Tasks to learn singly linked lists better
+### Tasks on learning singly linked lists better
