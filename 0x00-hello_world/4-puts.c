@@ -4,6 +4,7 @@
 /**
  *main - prints a string
  *
+ * puts appends a trailing new line automatically
  *Return: 0(Success)
  */
 int main(void)
