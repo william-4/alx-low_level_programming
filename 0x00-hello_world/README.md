@@ -1,6 +1,5 @@
 # C - Hello, World
 
-
 ### General
 
 > Why C programming is awesome
@@ -28,3 +27,5 @@
 > How to find the right header to include in your source code when using a standard library function
 
 > How does the main function influence the return value of the program
+
+#### Completed
